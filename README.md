@@ -88,7 +88,7 @@ Notes:
 ### Fixtures
 
 - `fixtures/loginFixture.ts` - login page fixture for login-tagged scenarios
-- `fixtures/cartFixture.ts` - inventory/header/cart fixtures for authenticated flows
+- `fixtures/cartFixture.ts` - inventory/header/cart fixtures 
 - `fixtures/checkoutFixture.ts` - checkout flow fixture with configurable product
 
 ### Auth Setup
@@ -125,7 +125,7 @@ npx playwright show-report
 
 Workflow file:
 
-- `.github/workflows/playwright.yml`
+- `.github/workflows/main.yml`
 
 The workflow runs:
 
@@ -136,19 +136,6 @@ The workflow runs:
 5. Playwright tests
 6. Upload report artifact
 
-### Required GitHub Secrets
-
-Set these in repository settings:
-
-- `BASE_URL`
-- `STANDARD_USERNAME`
-- `STANDARD_PASSWORD`
-- `LOCKED_USERNAME`
-- `LOCKED_PASSWORD`
-
-Path:
-
-- GitHub repository -> Settings -> Secrets and variables -> Actions -> New repository secret
 
 ## Naming Convention in Page Objects
 
