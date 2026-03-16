@@ -1,0 +1,38 @@
+{
+  "name": "playwright-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier . --check",
+    "format:fix": "npx prettier . --write",
+    "lint": "npx eslint",
+    "lint:fix": "npx eslint --fix",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:e2e": "playwright test --grep @e2e",
+    "test:login": "playwright test --grep @login",
+    "test:cart": "playwright test --grep @cart",
+    "test:checkout": "playwright test --grep @checkout",
+    "test:inventory": "playwright test --grep @inventory",
+    "test": "playwright test",
+    "tsc:check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "9.39.2",
+    "@faker-js/faker": "9.9.0",
+    "@playwright/test": "1.58.2",
+    "@types/node": "25.4.0",
+    "eslint": "9.39.2",
+    "eslint-plugin-playwright": "2.5.1",
+    "prettier": "3.8.1",
+    "prettier-plugin-organize-imports": "4.3.0",
+    "typescript-eslint": "8.55.0"
+  },
+  "dependencies": {
+    "dotenv": "17.3.1"
+  }
+}
